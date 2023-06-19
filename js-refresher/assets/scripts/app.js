@@ -154,3 +154,15 @@ const hobbies = ["Sports", "Cooking"];
 // hobbies = [];
 hobbies.push("Working");
 console.log(hobbies);
+
+//////////////////////////////////////////////
+// Inside the transformToObjects() function, you should use the map() method to transform all values of the received numberArray parameter (which will be an array of numbers).
+
+// The following code transforms the received number array as requested:
+
+function transformToObjects(numberArray) {
+  return numberArray.map((number) => {
+    return { val: number };
+  });
+}
+// This code uses an arrow function. Of course, you could also use a "normal function" (with the function keyword).
