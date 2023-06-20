@@ -1,16 +1,16 @@
-// import { apiKey } from "./util.js";
+import { apiKey } from "./util.js";
 
 // import apiKey from "./util.js";
-// import { apiKey, abc as content } from "./util.js";
-// import * as util from "./util.js";
+import { apiKey1, abc as content } from "./util.js";
+import * as util from "./util.js";
 
-// console.log(util.apiKey);
-// console.log(content);
+console.log(util.apiKey1);
+console.log(content);
 
-// const userMessage = "Hello World!!!";
+const userMessage = "Hello World!!!";
 
-// console.log(userMessage);
-// console.log(userMessage);
+console.log(userMessage);
+console.log(userMessage);
 
 // function createGreeting(userName, message = "Hello!") {
 // console.log(userName);
@@ -124,34 +124,41 @@
 // const list = document.querySelector("ul");
 // list.remove();
 
-// function handleTimeout() {
-//   console.log("Timed out!");
-// }
+function handleTimeout() {
+  console.log("Timed out!");
+}
 
-// const handleTimeout2 = () => {
-//   console.log("Timed out ... again!");
-// };
+const handleTimeout2 = () => {
+  console.log("Timed out ... again!");
+};
 
-// setTimeout(handleTimeout, 2000);
-// setTimeout(handleTimeout2, 3000);
-// setTimeout(() => {
-//   console.log("More timing out...");
-// }, 4000);
+setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
+setTimeout(() => {
+  console.log("More timing out...");
+}, 4000);
 
-// function init() {
-//   function greet() {
-//     console.log(“Hi!“);
-//   }
+function greeter(greenFn) {
+  greenFn();
+}
+greeter(() => console.log("Hi!"));
 
-//   greet();
-// }
+//// greet() can't be execute outside of init(), it's scoped to this init() function!!!
+function init() {
+  function greet() {
+    console.log("Hi!");
+  }
+  greet();
+}
+init();
 
-// init();
-
+// primitives (stri) vesrus reference values
+// we can't edit primitives values (strings, booleans, numbers), it will be always new values
 // const message = “Hello”;
 
+// with objects (reference values) we edited the original array and mutated the original array
 const hobbies = ["Sports", "Cooking"];
-// hobbies = [];
+// hobbies = []; // don't work
 hobbies.push("Working");
 console.log(hobbies);
 
