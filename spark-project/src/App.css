@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/*//////////////// Footer ////////////////////////*/
+
+.logo-block img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-subscribe {
+  font-size: 1.25rem;
+  padding-top: 8.8rem;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  color: rgba(200, 75, 4, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.li-title {
+  color: rgba(200, 75, 4, 1);
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.email-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 18rem;
+  height: auto;
+  padding-top: 1.87rem;
+  border-bottom: 0.06rem solid rgb(207, 213, 220);
+}
+
+.email-submit-btn a img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.btn-socialMedia {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.back-to-top-btn a img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.socialMedia {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding-top: 18.63rem;
+}
+.socialMedia img {
+  padding-left: 2.5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /* flex: 0 1 25%; */
+  height: 28.63%;
+  /* padding: 60px 177px 120px 185px; */
+  padding: 3.2% 9.3% 6.3% 9.7%;
+  /* padding: 3.75rem 11.06rem 7.5rem 11.56rem; */
+  /* gap: 13.31rem; */
+  gap: 11%;
+  /* gap: 123px; */
 }

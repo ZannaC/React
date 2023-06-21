@@ -77,4 +77,8 @@ export default function App() {
       </div>
     </div>
   );
+  function greet() {
+    console.log("Hello");
+  }
+  greet();
 }
