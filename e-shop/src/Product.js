@@ -1,12 +1,7 @@
 import React from "react";
+import ProductData from "./ProductData";
 
 function Product(props) {
-  return (
-    <article className="product">
-      <h2>{props.title}</h2>
-      <p className="price">${props.price}</p>
-      <p>{props.description}</p>
-    </article>
-  );
+  return <ProductData />;
 }
 export default Product;
