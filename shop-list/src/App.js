@@ -3,6 +3,8 @@ import "./index.css";
 
 import CreateList from "./CreateList";
 import AddProduct from "./AddProduct";
+import SectionOne from "./HomePageComponents/SectionOne";
+import SectionThree from "./HomePageComponents/SectionThree";
 
 const mainProducts = ["Milk", "Meet", "Fruits"];
 
@@ -21,6 +23,8 @@ export default function App() {
         <CreateList onListInput={showListHandler} />
         <AddProduct new={newList} />
       </ul>
+      <SectionOne />
+      <SectionThree />
     </div>
   );
 }
