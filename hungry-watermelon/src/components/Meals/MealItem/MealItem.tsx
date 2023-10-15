@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import MealItemForm from "./MealItemForm";
+import MealItemAddButtonForm from "./MealItemAddButtonForm";
 import classes from "./MealItem.module.css";
 import CartContext from "../../../store/cart-context";
 
@@ -32,7 +32,7 @@ const MealItem: React.FC<MealItemProps> = (props) => {
         <div className={classes.price}>{price}</div>
       </div>
       <div>
-        <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
+        <MealItemAddButtonForm id={props.id} onAddToCart={addToCartHandler} />
       </div>
     </li>
   );

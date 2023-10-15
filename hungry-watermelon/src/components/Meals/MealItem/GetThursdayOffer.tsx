@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "../MealItem/MealItemUpdate.module.css";
+import classes from "../MealItem/GetThursdayOffer.module.css";
 
-const MealItemUpdate = () => {
+const GetThursdayOffer = () => {
   const apiKey = "$2b$10$QicGxsrGEpmODOSNZP7Tlu5P8nENEG7zNy9kuQ94evxU4HFpIEErW";
   const putUrl = "https://api.jsonbin.io/v3/b/651068b40574da7622afb2d9";
   // const getUrl = "https://api.jsonbin.io/v3/b/651068b40574da7622afb2d9";
@@ -46,8 +46,6 @@ const MealItemUpdate = () => {
 
       const updatedData = await getResponse.json();
       console.log("Updated data for Thursday:", updatedData);
-
-      // Handle the updated data as needed
     } catch (error) {
       console.error(error);
     }
@@ -65,15 +63,4 @@ const MealItemUpdate = () => {
   );
 };
 
-export default MealItemUpdate;
-
-// NOTE: data for url, first step
-/*
-[
-    {
-      "id": "w1",
-      "name": "No offer",
-      "description": "Please wait",
-      "price": 0
-    }
-  ]*/
+export default GetThursdayOffer;

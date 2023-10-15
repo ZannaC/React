@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 import classes from "./AvailableMeals.module.css";
-import MealItemUpdate from "./MealItem/MealItemUpdate";
+import GetThursdayOffer from "./MealItem/GetThursdayOffer";
 
 interface Meal {
   id: string;
@@ -83,7 +83,7 @@ const AvailableMeals: React.FC = () => {
       <Card>
         <ul>{mealsList}</ul>
       </Card>
-      <MealItemUpdate />
+      <GetThursdayOffer />
     </section>
   );
 };

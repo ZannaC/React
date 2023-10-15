@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Input from "../../UI/Input";
-import classes from "./MealItemForm.module.css";
+import classes from "./MealItemAddButtonForm.module.css";
 
 interface MealItemFormProps {
   id: string;
@@ -28,7 +28,7 @@ const MealItemForm: React.FC<MealItemFormProps> = (props) => {
           id: `amount_${props.id}`,
           value: amount.toString(),
           onChange: handleAmountChange,
-          onBlur: () => {}, // You can add an onBlur handler if needed
+          onBlur: () => {},
         }}
       />
       <button type="submit">+ Add</button>

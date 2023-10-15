@@ -1,9 +1,9 @@
 import React from "react";
 
-import MealsSummary from "./MealsSummary";
+import MealsSummary from "./OfferText";
 import AvailableMeals from "./AvailableMeals";
 
-const Meals: React.FC = () => {
+const MealsPageContent: React.FC = () => {
   return (
     <React.Fragment>
       <MealsSummary />
@@ -12,4 +12,4 @@ const Meals: React.FC = () => {
   );
 };
 
-export default Meals;
+export default MealsPageContent;
