@@ -1,0 +1,1 @@
+Hungry 👀 WATERMELON 🍉 with <img src="./public/logo192.png" alt="React" width="27" height="27" style="vertical-align: bottom; margin-right: 5px;"> & <img src="./public/ts_logo.png" alt="Sass" width="27" height="27" style="vertical-align: bottom; margin-right: 5px;">
